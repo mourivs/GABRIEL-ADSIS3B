@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #081b29;
+    --main-color: #00abf0;
+    --text-color: #333;
+    --second-text-color: #555;
+    --white-color: #fff;
+    --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
+    --pages-color: linear-gradient(90deg, #fff, #ddd);
+    --border: .125rem solid #00abf0;
+    --box-shadow: 0 0 .6rem rgba(0, 0, 0, .2);
+    --border-radius: .6rem;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--bg-color);
+}
+
+.wrapper {
+    position: relative;
+    width: 66rem;
+    height: 45rem;
+    border-radius: var(--border-radius);
+}
+
+.cover {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: var(--cover-color);
+    box-shadow: var(--box-shadow);
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    transform-origin: right;
+    transition: transform 0.6s ease-in-out;
+}
+
+.cover-right.turn {
+    transform: rotateY(180deg);
+}
+
+.book {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background: var(--pages-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.book-page {
+    flex: 1;
+    padding: 2rem;
+    border-left: 2px solid var(--second-text-color); 
+}
+
+.profile-page img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    outline: 6px solid var(black);
+}
+
+.social-media a {
+    font-size: 24px;
+    margin: 0 10px;
+    display: inline-block;
+    color: #333;
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    color: var(--main-color);
+}
+
+.btn-box {
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background: var(--main-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    transition: 0.3s;
+}
+.legenda{
+  padding: 10px 15px;
+    background: var(--main-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    transition: 0.3s;
+}
+.btnf{
+  padding: 10px 15px;
+  background: var(--main-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px;
+  transition: 0.7s;
+}
+.btn:hover {
+    background: #0056b3;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--white-color);
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.popup.active {
+    display: block;
+}
+
+.popup .close-btn {
+    background: var(--main-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup .close-btn:hover {
+    background: #0056b3;
+}
+
+#coursesPopup ul {
+  list-style: none;
+  padding: 0;
+}
+
+#coursesPopup ul li {
+  font-size: 18px;
+  margin: 5px 0;
+  color: var(--text-color);
+}
+
+#coursesPopup .close-btn {
+  background: var(--main-color);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#coursesPopup .close-btn:hover {
+  background: #0056b3;
+}
+.profile-page h3 {
+  color: #377479; 
+}
+.social-media {
+  display: flex; 
+  gap: 10px; 
+}
+
+.social-media a {
+  display: inline-flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 50px;
+  height: 50px;
+  background-color: black; 
+  color: white; 
+  border-radius: 8px; 
+  font-size: 24px; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.social-media a:hover {
+  background-color: #00abf0; 
+  transform: scale(1.1); 
+}
+
+.social-media a i {
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover i {
+  color: #fff;
+}
+.social-media {
+  display: flex; 
+  gap: 2px; 
+}
+
+.social-media a {
+  display: inline-flex; 
+  justify-content: center;
+  align-items: center; 
+  width: 40px; 
+  height: 40px; 
+  background-color: black; 
+  color: white; 
+  border-radius: 8px; 
+  font-size: 24px; 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media a:hover {
+  background-color: #00abf0; 
+}
+
+.social-media a i {
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover i {
+  color: #fff;
+}

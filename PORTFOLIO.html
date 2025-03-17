@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Gabriel de Moura Motta</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="cover cover-left"></div>
+        <div class="cover cover-right turn"></div>
+
+        <div class="book">
+            <!-- perfil -->
+            <div class="book-page page-left">
+                <div class="profile-page">
+                    <img src="WhatsApp Image 2025-03-17 at 09.29.09.jpeg" alt="Gabriel de Moura">
+                    <h1>Gabriel de Moura</h1>
+                   
+                    <h3>Estudante de ADS / Editor de Vídeos</h3>
+                    <div class="social-media">
+                        <a href="https://instagram.com/mourivs" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://github.com/mourivs" target="_blank"><i class="bx bxl-github"  ></i></a>
+                        <a href="https://www.linkedin.com/in/gabriel-moura-5b7947315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class='bx bxl-linkedin-square'></i></a> 
+                    </div>
+                    <p>Olá, sou Gabriel, um estudante de Análise e Desenvolvimento de Sistemas. Estou atualmente no meu 3º semestre, sou originalmente de Medianeira PR.
+                        atualmente moro em Maringá PR, estive por muito tempo no Paraguay indo para festas e para eventos, tenho uma "bio" meio curta mas é isso.
+                    </p>
+                    <div class="btn-box">
+                        <a href="https://wa.me/45998248304" class="btn" target="_blank">Meu Contato</a>
+                        <a href="#" class="legenda">Cursos </a>
+                        <a href="https://www.unicesumar.edu.br" target="_blank" class="btnf">Faculdade</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-page page-right">
+                <h2>Meus Projetos</h2>
+                <p>Trabalhos mais recentes.</p>
+                <div class="btn-box">
+                    <a href="#" class="btnf" id="showProjectsBtn">Ver Projetos</a>
+                            <!-- botao da cesu -->
+   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up projetos -->
+    <div class="popup" id="projectsPopup">
+        <p>Nenhum Projeto foi adicionado :(</p>
+        <button class="close-btn" id="closePopupBtn">Fechar</button>
+    </div>
+
+    <!-- Pop-up  cursos -->
+    <div class="popup" id="coursesPopup">
+        <h3>Meus Cursos</h3>
+        <ul>
+            <li>Fisk Inglês - Avançado</li>
+            <li>Espanhol - Avançado</li>
+            <li>Kumon - Matemática e Português</li>
+            
+        </ul>
+        <button class="close-btn" id="closeCoursesPopupBtn">Fechar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
